@@ -84,7 +84,21 @@
         Operacion = "+"
 
     End Sub
-
+    
+    Private Sub btnDiv_Click(sender As Object, e As EventArgs) Handles btnDiv.Click
+        Operando1 = CDbl(lblResultado.Text)
+        lblResultado.Text = "0"
+        Operacion = "/"
+        
+    End Sub
+    
+    Private Sub btnMult_Click(sender As Object, e As EventArgs) Handles btnMult.Click
+        Operando1 = CDbl(lblResultado.Text)
+        lblResultado.Text = "0"
+        Operacion = "*"
+        
+    End Sub
+    
     Private Sub btnIgual_Click(sender As Object, e As EventArgs) Handles btnIgual.Click
         Select Case Operacion
             Case "+"
